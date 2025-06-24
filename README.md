@@ -11,11 +11,15 @@ You also need to trigger the script each time focus changes (this happens when a
 
     on-focus-changed = ['exec-and-forget /absolute/path/to/autotiling']
 
-You can move the autotiling script to some directory, and then you need to add it in the .aerospace.toml configuration file insde on-focus-changed trigger
+You can move the autotiling script to some directory, and then you need to add it in the .aerospace.toml configuration file inside on-focus-changed trigger
 
 e.g.
 
     mv autotiling $HOME/.local/bin
+
+You may need to add execute permission to the autotiling script
+
+    chmod +x autotiling
 
 Then the absolute path would be:
 
