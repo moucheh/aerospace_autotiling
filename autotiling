@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUM=$(aerospace list-windows --workspace visible | wc -l)
+NUM=$(aerospace list-windows --workspace focused | wc -l)
 
 if (($NUM % 2 == 0)); then
   aerospace split vertical
